@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <h1 class="text-center">NOTICIAS</h1>
+    <div class="news-item" *ngFor="let news of newsList">
+      <img [src]="news.image" class="img-fluid" alt="Imagen de la noticia">
+      <h2>{{ news.title }}</h2>
+      <h3>{{ news.subtitle }}</h3>
+      <p>{{ news.body }}</p>
+      <ul>
+        <li *ngFor="let item of news.details">{{ item }}</li>
+      </ul>
+      <a [href]="news.link" target="_blank">Leer más</a>
+    </div>
+  </div>
+  

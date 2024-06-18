@@ -1,0 +1,20 @@
+/* styles.css */
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .header .logo, .header .empresa, .header .menu, .header .avatar, 
+  .footer .copyright, .footer .contacto {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header .menu a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
